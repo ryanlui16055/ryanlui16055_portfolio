@@ -1,0 +1,132 @@
+{% extends 'layout.html' %}
+{% block title %}
+  Ryan Lui - Software Engineer
+{% endblock %}
+{% block content %}
+  {% load static %}
+  <div class="portfolio-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{% static 'image/project_image/portfolio.png' %}" alt="My portfolio" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Personal portfolio website</h3>
+        <p class="project-description">This is my personal portfolio website developed using Django, HTML, CSS, and JavaScript. It comprehensively showcases my professional journey, featuring detailed sections on my work experience, educational background, and a curated collection of past projects.</p>
+        <div class="tech-stack">
+          <div class="tech-badge">Django</div>
+          <div class="tech-badge">HTML5</div>
+          <div class="tech-badge">CSS3</div>
+          <div class="tech-badge">Javascript</div>
+          <div class="tech-badge">Python</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{% static 'image/project_image/dissertation.png' %}" alt="Ai-Traffic Control System" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Ai-Traffic Control System</h3>
+        <p class="project-description">Ai-Traffic Control System is my dissertation project when i was in the university, aiming to reduce traffic conjection in urban area. This project leverages YOLO v8 for real-time traffic object detection, integrated with a GRU (Gated Recurrent Unit) model to predict and optimize traffic flow. Utilizing SUMO as the simulation environment, the research demonstrated a significant 16% reduction in urban traffic congestion</p>
+        <div class="tech-stack">
+          <div class="tech-badge">Python</div>
+          <div class="tech-badge">YOLOv8</div>
+          <div class="tech-badge">GRU</div>
+          <div class="tech-badge">Tensorflow</div>
+          <div class="tech-badge">SUMO</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{% static 'image/project_image/qr_code.png' %}" alt="QR Code Detection System" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">QR Code Detection System</h3>
+        <p class="project-description">QR Code Detection System for Construction Site Safety Created a Python-based QR code detection system to monitor equipment safety, collaborating with China Mobile HK. Implemented image transformation and QR code decoding techniques to track over 100+ employer equipment in real-time, enhancing workplace safety and inventory management.</p>
+        <div class="tech-stack">
+          <div class="tech-badge">Python</div>
+          <div class="tech-badge">OpenCV</div>
+          <div class="tech-badge">Pyzbar</div>
+          <div class="tech-badge">Pillow</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{% static 'image/project_image/tools.png' %}" alt="Tools Detection System for Construction Site Safety" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Tools Detection System for Construction Site Safety</h3>
+        <p class="project-description">Tools Tracking System for Correctional Services Developed an advanced object detection system for Hong Kong Correctional Services using Python, YOLO, and VGG16. The system accurately verifies and tracks tools borrowed by 10,000+ prisoners, significantly improving inventory control and institutional safety.</p>
+        <div class="tech-stack">
+          <div class="tech-badge">Python</div>
+          <div class="tech-badge">YOLO</div>
+          <div class="tech-badge">VGG16</div>
+          <div class="tech-badge">TensorFlow</div>
+          <div class="tech-badge">OpenCV</div>
+          <div class="tech-badge">Keras</div>
+        </div>
+      </div>
+    </div>
+    <!-- Project 5 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{% static 'image/project_image/disease.png' %}" alt="Disease Treatment Response Prediction" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Disease Treatment Response Prediction</h3>
+        <p class="project-description">Developed a machine learning model using Python to predict treatment responses for diseases. Utilized pandas and sklearn for feature selection, and applied k-Fold cross-validation to enhance model performance and accuracy.</p>
+        <div class="tech-stack">
+          <div class="tech-badge">Python</div>
+          <div class="tech-badge">Pandas</div>
+          <div class="tech-badge">Scikit-learn (sklearn)</div>
+          <div class="tech-badge">TensorFlow</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{% static 'image/project_image/chatbot.png' %}" alt="Restaurant Booking Chatbot" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Restaurant Booking Chatbot</h3>
+        <p class="project-description">Created an advanced chatbot using natural language processing techniques. Implemented sentiment analysis and TF-IDF vectorization with cosine similarity to improve dialogue detection and response accuracy, demonstrating sophisticated NLP capabilities.</p>
+        <div class="tech-stack">
+          <div class="tech-badge">Python</div>
+          <div class="tech-badge">NLP</div>
+          <div class="tech-badge">NLTK</div>
+          <div class="tech-badge">Scikit-learn(sklearn)</div>
+          <div class="tech-badge">Ruby on Rails</div>
+        </div>
+      </div>
+    </div>
+    <!-- Project 7 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{% static 'image/project_image/water_pump.png' %}" alt="Water Pump Functionality Prediction" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Water Pump Functionality Prediction</h3>
+        <p class="project-description">Conducted comprehensive predictive modeling for water pump functionality using Python. Performed Exploratory Data Analysis (EDA), data cleaning, and preprocessing, including correlation matrix analysis. Utilized K-Fold cross-validation to assess and improve model performance.</p>
+        <div class="tech-stack">
+          <div class="tech-badge">Python</div>
+          <div class="tech-badge">Pandas</div>
+          <div class="tech-badge">Numpy</div>
+          <div class="tech-badge">Scikit-learn (sklearn)</div>
+          <div class="tech-badge">Seaborn (Data visualization)</div>
+          <div class="tech-badge">TensorFlow</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

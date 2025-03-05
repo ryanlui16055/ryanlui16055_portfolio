@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+{% block title %}
+  Ryan Lui - Software Engineer
+{% endblock %}
+{% block content %}
+  {% load static %}
+  <div class="container_work">
+    <h1 class="section-title">
+      <img src="{% static 'image/work_page_icon/work_icon.png' %}" alt="work" />
+      Work Experience & Education Timeline
+    </h1>
+
+    <div class="timeline">
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="{% static 'image/work_page_icon/university_icon.png' %}" alt="Education" />
+        </div>
+        <div class="timeline-content">
+          <h2>MSc Computer Science (AI) 🚀</h2>
+          <h3>University of Nottingham, United Kingdom</h3>
+          <p class="tech-stack">🔧 Python, Machine Learning, Computer Vision, YOLO, GRU</p>
+          <ul>
+            <li>🚀 Implemented an AI-based Traffic Light Control System by integrating YOLO v8 for live object detection and a GRU model to predict future congestion</li>
+            <li>🚀 Developed a restaurant booking chatbot (LLM) via sentiment analysis and TF-IDF vectorisation with cosine similarity</li>
+            <li>🚀 Implemented a predictive model for water pump functionality in Python using EDA and K-Fold cross-validation</li>
+          </ul>
+          <p class="date">Sep 2023 - Dec 2024</p>
+        </div>
+      </div>
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="{% static 'image/work_page_icon/work_small_icon.png' %}" alt="work_icon" />
+        </div>
+        <div class="timeline-content">
+          <h2>Assistant Software Engineer <span>⚡</span></h2>
+          <h3>IT Channel (Asia) Limited, Hong Kong</h3>
+          <p class="tech-stack">🔧 Python, OpenCV, YOLO, Azure, TensorFlow, Django, HTML5, CSS3</p>
+          <ul>
+            <li>🚀 Created QR code detection system using Python on image transformation and QR code decoding to monitor construction site 100+ employer equipment safety co-operates with China mobile HK</li>
+            <li>🚀 Implemented a tools detection system for the Hong Kong Correctional Services using Python, incorporating YOLO and VGG16 object detection</li>
+            <li>🚀 Used Tesseract-OCR training model to identify hygiene receipt information among Hong Kong Union Hospital surgery room</li>
+            <li>Manage and deploy customer project database on Microsoft Azure and Tencent Cloud (TDSQL)</li>
+          </ul>
+          <p class="date">Jan 2022 - Jan 2024</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="{% static 'image/work_page_icon/work_small_icon.png' %}" alt="work" />
+        </div>
+        <div class="timeline-content">
+          <h2>Summer Internship</h2>
+          <h3>HKT Services Limited, Hong Kong</h3>
+          <p class="tech-stack">🔧 SQL, Internal API, Web Development, Node.js, HTML5, CSS3</p>
+          <ul>
+            <li>Collaborated with 2 team members to use internal API to create internal information centre website based on sales department requirements</li>
+            <li>Reorganised company's internal database using SQL to systematically categorise it into newly defined classifications</li>
+          </ul>
+          <p class="date">Aug 2021 - Sep 2021</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 4 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="{% static 'image/work_page_icon/university_icon.png' %}" alt="Education" />
+        </div>
+        <div class="timeline-content">
+          <h2>BSc Computer Science 🚀</h2>
+          <h3>Metropolitan University of Hong Kong</h3>
+          <p class="tech-stack">🔧 Data Structures, Algorithms, AI, OOP, Mobile App Development</p>
+          <ul>
+            <li>Completed coursework in Data Structures and Algorithms, Operating Systems, Artificial Intelligence</li>
+            <li>Gained experience in Mobile App Development, Software Engineering, User Experience/User Interfaces</li>
+            <li>Studied Object-Oriented Programming, Gaming Design, Unreal engine 4 gaming implementation</li>
+          </ul>
+          <p class="date">Oct 2020 - Jun 2022</p>
+        </div>
+      </div>
+
+      {% comment %}first circle{% endcomment %}
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="{% static 'image/work_page_icon/star.png' %}" alt="Education" />
+        </div>
+        <div class="timeline-content">
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

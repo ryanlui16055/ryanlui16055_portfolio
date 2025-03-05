@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+  Home
+{% endblock %}
+{% block content %}
+  <div class="home">
+    <div class="image-container">
+      <img src="{% static 'image/ryan.jpg' %}" alt="Profile" class="profile-image" />
+    </div>
+
+    <div class="content">
+      <h1>I’m Ryan, a Software Engineer in Bristol, UK, fueled by a burning passion for creating innovative, AI-driven solutions that make a difference.</h1>
+
+      <p>I specialize in developing intelligent solutions using Python, Java, C++ and cutting-edge AI/ML techniques. My experience spans full-stack development, data analysis, and computer vision, with a passion for creating impactful applications.</p>
+      <p>I thrive on tackling any challenge—whether it’s building a QR code detection system for construction safety, designing an AI traffic light control system that slashed urban congestion by 16%, or developing seamless web applications using Django.</p>
+
+      <p>With expertise in Python, Java, C++, Django, and cutting-edge AI/ML tools like YOLO, TensorFlow, and LLMs, I’m dedicated to delivering impactful, user-friendly solutions through full-stack development, computer vision, and data analysis. I’m especially excited to combine Django’s web development power with AI to create smarter, more dynamic applications.</p>
+      <p>
+        When I’m not coding, I recharge on the tennis court <img src="{% static 'image/tennis.png' %}" class="icon_image" /> , ready to dive into the next big project. I’m eager to take on any role, willing to relocate, and eligible to work in the UK without visa sponsorship—nothing excites me more than bringing new ideas to life! Let’s connect and turn your vision into reality through my projects!
+      </p>
+      <p class="highlight_line">
+        <img src="{% static 'image/work_page_icon/star.png' %} " class="icon_image_2" /> NO work permit needed
+      </p>
+      <p class="highlight_line">
+        <img src="{% static 'image/work_page_icon/star.png' %} " class="icon_image_2" /> Willing To Relocate
+      </p>
+    </div>
+  </div>
+{% endblock %}
