@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-cgx!p(i2#x(svc+4$4dfxv70pt#5g@lc5he_ku=*38e3+g#c%$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.61.42.135','localhost']
+ALLOWED_HOSTS = ['13.61.42.135','localhost', 'ryan-lui']
 
 
 # Email settings for Gmail SMTP
