@@ -27,7 +27,7 @@ USE_X_FORWARDED_HOST = True
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ryan-lui.com', 'www.ryan-lui.com', '13.61.42.135', 'localhost']
+ALLOWED_HOSTS = ['ryan-lui.com', 'www.ryan-lui.com', '13.61.176.186', 'localhost']
 
 
 # Email settings for Gmail SMTP
