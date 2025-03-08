@@ -25,9 +25,9 @@ SECRET_KEY = "django-insecure-cgx!p(i2#x(svc+4$4dfxv70pt#5g@lc5he_ku=*38e3+g#c%$
 USE_X_FORWARDED_HOST = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['13.51.180.33','ryan-lui.com']
+ALLOWED_HOSTS = ["13.51.180.33", "ryan-lui.com", "www.ryan-lui.com"]
 
 
 # Email settings for Gmail SMTP
@@ -130,11 +130,15 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-# STATICFILES_DIRS = [BASE_DIR / "static"]
-
 import os
 
-STATIC_ROOT = os.path.join(BASE_DIR,"static/")
+
+STATICFILES_DIRS = (
+    "/Users/ryan/Library/CloudStorage/OneDrive-Personal/github_PJ/Personal_website/portfolio_ryan/portfolio_ryan/static",
+)
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
