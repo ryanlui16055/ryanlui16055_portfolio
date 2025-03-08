@@ -128,14 +128,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 import os
 
 
-STATICFILES_DIRS = (
-    "/Users/ryan/Library/CloudStorage/OneDrive-Personal/github_PJ/Personal_website/portfolio_ryan/portfolio_ryan/static",
-)
+# STATICFILES_DIRS = (
+#     "/Users/ryan/Library/CloudStorage/OneDrive-Personal/github_PJ/Personal_website/portfolio_ryan/portfolio_ryan/static",
+# )
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
